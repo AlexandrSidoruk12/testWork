@@ -1,0 +1,1 @@
+0 * * * * /usr/local/bin/php /var/www/html/yii currency-parser/parse-currency >> /var/www/html/runtime/logs/cron.log 2>&1
