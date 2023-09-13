@@ -16,6 +16,8 @@ COPY . /var/www/html
 
 COPY .env /var/www/html/.env
 
+RUN chmod 0644 runtime
+
 COPY .docker/crontab /etc/cron.d/crontab
 RUN chmod 0644 /etc/cron.d/crontab
 RUN crontab /etc/cron.d/crontab

@@ -24,7 +24,7 @@ composer-update:
 	docker-compose run --rm php composer update
 
 migrations-up:
-	sleep 10
+	sleep 20
 	docker-compose run --rm php /var/www/html/yii migrate/up --interactive=0
 
 parse-currency:
