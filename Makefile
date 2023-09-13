@@ -24,7 +24,7 @@ composer-update:
 	docker-compose run --rm php composer update
 
 migrations-up:
-	sleep 20
+	sleep 90 #Это сделано, чтобы дать достаточно времени для запуска и инициализации базы данных, прежде чем начать миграции.
 	docker-compose run --rm php /var/www/html/yii migrate/up --interactive=0
 
 parse-currency:
